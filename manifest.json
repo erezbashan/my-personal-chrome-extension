@@ -1,12 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "Hide 'Summarize this email' Card",
-  "description": "Hides Gmail cards whose inner text is exactly 'Summarize this email'.",
-  "version": "1.0",
+  "name": "My Gmail Helper",
+  "description": "Hides Gmail cards whose inner text is exactly 'Summarize this email'. Hides specific toolbar items in Gmail.",
+  "version": "1.1",
   "content_scripts": [
     {
       "matches": ["https://mail.google.com/*"],
       "js": ["content.js"],
+      "css": ["style.css"],
       "run_at": "document_idle"
     }
   ],

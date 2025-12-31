@@ -1,0 +1,8 @@
+/* Target the buttons by their hover-text/aria-labels */
+div[aria-label="Report spam"],
+div[aria-label="Delete"],
+div[aria-label="Add to Tasks"],
+div[aria-label="Move to"],
+div[aria-label="Labels"] {
+    visibility: hidden !important;
+}
